@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/telegramdesktop/tdesktop.git",
+  "release": "v7.4.1",
+  "commit": "157f5cfc85e2dd1fa67f129a5e31a81db5ddeb19",
+  "policy": "Merge reviewed stable releases; preserve history and pinned submodules."
+}

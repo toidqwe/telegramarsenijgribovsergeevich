@@ -1,0 +1,22 @@
+name: Fork metadata checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  metadata:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check metadata and PowerShell syntax (not an application build)
+        shell: powershell
+        run: .\scripts\check-repository.ps1
+      - name: Test local API cache validation (no Telegram connection)
+        shell: powershell
+        run: .\scripts\test-api-cache.ps1
