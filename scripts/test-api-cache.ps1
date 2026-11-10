@@ -41,3 +41,4 @@ try {
 }
 
 Write-Output 'API cache input and redaction tests passed; no API connection was attempted.'
+exit 0
