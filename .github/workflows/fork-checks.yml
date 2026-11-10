@@ -13,7 +13,7 @@ jobs:
   metadata:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Check metadata and PowerShell syntax (not an application build)
         shell: powershell
         run: .\scripts\check-repository.ps1
